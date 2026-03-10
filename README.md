@@ -30,10 +30,7 @@ Dieses Projekt ist eine interaktive Rezept-Website, ZutatenZirkus, erstellt mit 
 
 ![colors](./img/colors.png)
 
-/*
-  Entschuldigung dafür, dass ich die Farben der Vorlage nicht eingehalten habe, 
-  ich habe einfach mein eigenes Variablen-Template aus meinem Portfolio verwendet, um das CSS schneller erstellen zu können.
-*/
+*Entschuldigung dafür, dass ich die Farben der Vorlage nicht eingehalten habe, ich habe einfach mein eigenes Variablen-Template aus meinem Portfolio verwendet, um das CSS schneller erstellen zu können.*
 
 ---
 
