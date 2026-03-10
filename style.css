@@ -1,0 +1,200 @@
+/* style.css — ZutatenZirkus – Drachenatem | Recipe Website
+   Míriam Domínguez Martínez - 10.03.2026
+*/
+
+/* ================================================================
+   0. CSS CUSTOM PROPERTIES
+*/
+:root {
+  --white:       #FFF;
+  --light-green: #C0E992;
+  --primary:     #4b9c76;
+  --dark-green:  #59896C;
+  --accent:      #59AF7D;
+  --text:        #1a1a1a;
+  --text-muted:  #6b7280;
+  --border:      #e5e7eb;
+  --surface:     #f9fafb;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ================================================================
+   1. BASE BODY STYLES
+*/
+body {
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+  color: var(--text);
+  background: var(--surface);
+}
+
+
+/* ================================================================
+   2. HEADER
+*/
+header {
+  text-align: center;
+  padding: 24px 16px 8px;
+}
+
+header h1 {
+  font-size: 32px;
+  color: var(--primary);
+}
+
+.tagline {
+  color: var(--text-muted);
+  font-style: italic;
+  margin-top: 4px;
+}
+
+
+/* ================================================================
+   3. RECIPE HERO BOX
+*/
+.recipe-hero {
+  background: var(--primary);
+  color: var(--white);
+  margin: 20px auto;
+  max-width: 700px;
+  border-radius: 8px;
+  padding: 24px 28px;
+}
+
+.recipe-hero h2 {
+  font-size: 22px;
+  margin-bottom: 12px;
+}
+
+/* Semi-transparent inner box for the description text */
+.recipe-hero p {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 6px;
+  padding: 14px;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+
+/* ================================================================
+   4. PORTION SELECTOR BAR
+*/
+.portions-bar {
+  text-align: center;
+  margin: 20px auto;
+  font-size: 15px;
+}
+
+.portions-bar input {
+  width: 50px;
+  text-align: center;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  padding: 4px;
+  font-size: 15px;
+  margin-left: 6px;
+}
+
+.portions-bar input:focus {
+  outline: none;
+  border-color: var(--primary); /* Green border on focus since was orange for defauld */
+}
+
+
+/* ================================================================
+   5. MAIN CONTENT WRAPPER
+*/
+main {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 16px 40px;
+}
+
+/* Two-column flex layout: sidebar (aside) + steps (section) */
+.content {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+
+/* ================================================================
+   6. INGREDIENTS SIDEBAR (ASIDE)
+*/
+aside {
+  background: var(--white);
+  border-radius: 8px;
+  padding: 16px 20px;
+  min-width: 170px;
+  flex-shrink: 0; /* prevents the sidebar from shrinking */
+}
+
+aside h3 {
+  font-size: 15px;
+  margin-bottom: 12px;
+  color: var(--dark-green);
+}
+
+aside table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+aside td {
+  padding: 5px 4px;
+  font-size: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+/* Right-aligned bold cell for the ingredient amount */
+aside td:last-child {
+  text-align: right;
+  font-weight: bold;
+  color: var(--dark-green);
+}
+
+
+/* ================================================================
+   7. RECIPE STEPS (SECTION)
+*/
+section h3 {
+  font-size: 18px;
+  margin-bottom: 14px;
+  color: var(--text);
+}
+
+section ol {
+  padding-left: 20px;
+}
+
+section ol li {
+  margin-bottom: 14px;
+  line-height: 1.6;
+  font-size: 14px;
+  background: rgba(192, 233, 146, 0.4); /* Light green background for better readability */
+  padding: 5px 5px;
+  border-radius: 6px; /* Rounded corners */
+}
+
+/* ============================================
+   8. FOOTER
+*/
+
+/* Footer styles */
+footer {
+    background-color: var(--white); /* White background for better contrast with text */
+    color: var(--text); /* Darker text color for better contrast */
+    padding: 32px 48px;
+    text-align: center;
+    font-size: 14.4px;
+}
+
+footer p {
+    color: var(--text); /* Darker text color for better contrast */
+    margin: 0; /* Removes default margin from the footer paragraph for better spacing */
+}

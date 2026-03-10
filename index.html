@@ -1,0 +1,97 @@
+<!-- 
+   index.html — ZutatenZirkus – Drachenatem | Recipe Website
+   Míriam Domínguez Martínez - 10.03.2026
+-->
+
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <!-- ============================================================
+    META & PAGE SETUP
+  -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ZutatenZirkus – Drachenatem</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       HEADER
+  -->
+  <header>
+    <h1>ZutatenZirkus</h1>
+    <p class="tagline">~ für alle die gern kochen ~</p>
+  </header>
+
+  <!-- ============================================================
+       RECIPE HERO BOX
+  -->
+  <div class="recipe-hero">
+    <h2>Drachenatem-Curry</h2>
+    <p>
+      Dieses Curry ist nicht nur für mutige Esser gemacht, sondern bringt dein Abendessen auf Hochtouren! Mit seiner pikanten Chili-Note und dem wärmenden Ingwer wird jeder Bissen zu einer explosiven Geschmacksreise. 
+      Das beste daran? Dein Atem wird so feurig sein, dass selbst Drachen neidisch werden würden Perfekt für alle, 
+      die es ein bisschen hotter mögen - aber keine Angst: Die Kokosmilch sorgt dafür, dass das Feuer im richtigen Maß bleibt. 
+      Also, bereite dich auf einen kulinarischen Abenteuersprung in den Orient vor - aber lass niemanden zu nahe kommen, nachdem du davon probiert hast...
+    </p>
+  </div>
+
+  <!-- ============================================================
+       MAIN CONTENT
+  -->
+  <main>
+
+    <!-- Portion selector input -->
+    <div class="portions-bar">
+      <label for="portionen">Portionen:</label>
+      <input type="number" id="portionen" value="1" min="1" max="20" />
+    </div>
+
+    <!-- Two-column layout: ingredients on the left, steps on the right -->
+    <div class="content">
+
+      <!-- Ingredients sidebar -->
+      <aside>
+        <h3>Was du brauchst:</h3>
+        <table>
+          <tr><td>Huhn</td>        <td id="huhn">1 Stk.</td></tr>
+          <tr><td>Currypulver</td> <td id="curry">10g</td></tr>
+          <tr><td>Kokosmilch</td>  <td id="kokos">250ml</td></tr>
+          <tr><td>Ingwer</td>      <td id="ingwer">2ml</td></tr>
+          <tr><td>Zwiebel</td>     <td id="zwiebel">1 Stk.</td></tr>
+          <tr><td>Reis</td>        <td id="reis">200g</td></tr>
+          <tr><td>Zitronensaft</td><td id="zitrone">20ml</td></tr>
+          <tr><td>Chili</td>       <td id="chili">0.5g</td></tr>
+        </table>
+      </aside>
+
+      <!-- Recipe steps -->
+      <section>
+        <h3>So wird's gemacht</h3>
+        <ol>
+          <li>Den Reis nach Packungsanweisung in leicht gesalzenem Wasser weich kochen. Abschöpfen und warm stellen.</li>
+          <li>In einem großen Topf oder einer Pfanne etwas Öl erhitzen (nicht im Rezept aufgeführt, aber empfohlen: 1-2 EL ŎI). Die fein gewürfelten Zwiebeln darin glasig anschwitzen.</li>
+          <li>Das gewürfelte Huhn zur Zwiebeln geben und von allen Seiten anbraten, bis es eine goldbraune Farbe bekommt. Ingwer und Chili hinzufügen: Den geriebenen Ingwer sowie die fein gehackte Chilischote zum Huhn geben und alles kurz mitanschwitzen lassen. So entfaltet sich der aromatische Duft!</li>
+          <li>Das Currypulver einstreuen und gut unter das Huhn mischen. Etwa 1 Minute...</li>
+        </ol>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ============================================================
+       JAVASCRIPT LINK
+  -->
+  <script src="script.js"></script>
+
+</body>
+  <!-- ============================================
+       FOOTER
+  -->
+  <footer>
+    <p>&copy; 2026 ZutatenZirkus - Míriam Domínguez Martínez | DBE Academy </p>
+  </footer>
+
+</html>
+
