@@ -17,30 +17,18 @@ Dieses Projekt ist eine interaktive Rezept-Website, ZutatenZirkus, erstellt mit 
 /
 ├── index.html         
 ├── style.css         
-├── script.js         
+├── script.js
+└── img/
+    ├── colors.png
+    └── template.png        
 └── README.md           
 ```
 
 ---
 
 ### Farbpalette
-- **Primär:** `#4b9c76` (Grün)
-- **Primär Dunkel:** `#59896C` (Dunkelgrün)
-- **Akzent:** `#59AF7D` (Hellgrün)
-- **Hell:** `#C0E992` (Hellgrün Hintergrund)
-- **Text:** `#1a1a1a` (Dunkeltext)
 
----
-
-### JavaScript-Konzepte
-
-- **Variablen:** `let` für veränderliche Werte (Portionsmenge), `const` für unveränderliche Daten (Zutaten-Objekt)
-- **Objekte:** Zutaten werden als Objekt mit `value` und `unit` pro Schlüssel gespeichert
-- **Funktionen:** `updateIngredients()` berechnet und aktualisiert alle Zutatenmengen
-- **DOM-Manipulation:** `document.getElementById()` und `textContent` zum Aktualisieren der Seite
-- **Event Listener:** `addEventListener("input", ...)` reagiert auf Benutzereingaben in Echtzeit
-- **Kontrollstruktur:** `for...in`-Schleife zum Durchlaufen aller Zutaten
-- **Zahlenformatierung:** `Number.isInteger()` und `toFixed(1)` für saubere Anzeige
+![colors](./img/colors.png)
 
 ---
 
