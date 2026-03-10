@@ -10,15 +10,21 @@
 
 let portionsmenge = 1;
 
-
-/* SETP 2: SHOW WELCOME MESSAGE
-   When the page loads, I want to show a welcome message to the user.
-   I use the alert() function to create a pop-up message in the browser.
-   I add the variable at the end so it shows the current number.
-   The "\n" makes a new line inside the message.
+/* STEP 2: CALCULATE PORTION AMOUNTS
+   Instead of showing a pop-up alert (which i removed), we now work with the Developer Console.
+   First, I create a variable "zutatenMenge" to store a base ingredient amount (e.g. 200 grams).
+   Then I multiply it by "portionsmenge" to get the calculated result.
+   Finally, I use console.log() (F12) to display a readable message in the browser console.
 */
 
-alert("Willkommen bei ZutatenZirkus!\nAktuelle Portionsmenge: " + portionsmenge);
+// Base amount of an ingredient for 1 portion (e.g. 200 grams of rice)
+let zutatenMenge = 200;
+
+// Multiply the base amount by the number of portions to get the total
+let berechneteMenge = zutatenMenge * portionsmenge;
+
+// Show the result in the browser console with a clear, readable message
+console.log("Berechnete Portionsmenge: " + berechneteMenge);
 
 /* SETP 3: CALCULATE INGREDIENTS
    Here I'm saving all the ingredients and their amounts for 1 portion.
