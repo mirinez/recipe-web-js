@@ -3,7 +3,7 @@
 */
 
 /* 
-  SETP 1: CREATE VARIABLES
+  STEP 1: CREATE VARIABLES
 */
 
 let portionsmenge = 1;
@@ -12,13 +12,13 @@ let portionsmenge = 1;
   STEP 2: CALCULATE PORTION AMOUNTS
 */
 
-// Base amount of an ingredient for 1 portion (e.g. 200 grams of rice).
+// Base amount of an ingredient for 1 portion (e.g. 200 grams of rice)
 let zutatenMenge = 200;
 
-// Multiply the base amount by the number of portions to get the total.
+// Multiply the base amount by the number of portions to get the total
 let berechneteMenge = zutatenMenge * portionsmenge;
 
-// Show the result in the browser console with a clear, readable message.
+// Show the result in the browser console with a clear, readable message
 console.log("Berechnete Portionsmenge: " + berechneteMenge);
 
 /* 
@@ -71,9 +71,13 @@ function updateIngredients() {
 document.getElementById("portionen").addEventListener("input", function () {
 
   // Read the value from the input and convert it to a number.
-  portionsmenge = parseInt(this.value) || 1;
+  portionsmenge = parseInt(this.value);
 
-  // Run the function to recalculate and update all ingredient amounts.
-  updateIngredients();
+  // Check if portionsmenge is invalid (0 or less)
+  if (portionsmenge <= 0) {
+    alert("Bitte gib eine gültige Portionsmenge ein!"); // warn the user
+  } else {
+    updateIngredients(); // only calculate if input is valid
+  }
 
 });
