@@ -8,6 +8,16 @@
 
 let portionsmenge = 1;
 
+// The three arrays
+let zutaten   = ["Huhn", "Currypulver", "Kokosmilch", "Ingwer", "Zwiebel", "Reis", "Zitronensaft", "Chili"];
+let mengen    = [1, 10, 250, 2, 1, 200, 20, 0.5];
+let einheiten = ["Stk.", "g", "ml", "ml", "Stk.", "g", "ml", "g"];
+
+// Print index 0 of each array
+console.log(zutaten[0]);   // "Huhn"
+console.log(mengen[0]);    // 1
+console.log(einheiten[0]); // "Stk."
+
 /* 
   STEP 2: CALCULATE PORTION AMOUNTS
 */
