@@ -18,6 +18,12 @@ console.log(zutaten[0]);   // "Huhn"
 console.log(mengen[0]);    // 1
 console.log(einheiten[0]); // "Stk."
 
+// Display arrays, print all ingredients to the console
+
+for (let i = 0; i < zutaten.length; i++) {
+  console.log("Ingredient: " + zutaten[i] + " – " + mengen[i] + " " + einheiten[i]);
+}
+
 /* 
   STEP 2: CALCULATE PORTION AMOUNTS
 */
