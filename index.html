@@ -1,6 +1,6 @@
 <!-- 
-   index.html — ZutatenZirkus – Drachenatem | Recipe Website
-   Míriam Domínguez Martínez - 10.03.2026
+   index.html - ZutatenZirkus - Drachenatem | Recipe Website
+   Míriam Domínguez Martínez - 18.03.2026
 -->
 
 <!DOCTYPE html>
@@ -11,7 +11,7 @@
   -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>ZutatenZirkus – Drachenatem</title>
+  <title>ZutatenZirkus - Drachenatem</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -28,13 +28,31 @@
        RECIPE HERO BOX
   -->
   <div class="recipe-hero">
-    <h2>Drachenatem-Curry</h2>
+    <h2>
+      Drachenatem-Curry
+      <button class="info-btn" id="openPopup" title="Allergene anzeigen">ℹ</button>
+    </h2>
     <p>
       Dieses Curry ist nicht nur für mutige Esser gemacht, sondern bringt dein Abendessen auf Hochtouren! Mit seiner pikanten Chili-Note und dem wärmenden Ingwer wird jeder Bissen zu einer explosiven Geschmacksreise. 
       Das beste daran? Dein Atem wird so feurig sein, dass selbst Drachen neidisch werden würden Perfekt für alle, 
       die es ein bisschen hotter mögen - aber keine Angst: Die Kokosmilch sorgt dafür, dass das Feuer im richtigen Maß bleibt. 
       Also, bereite dich auf einen kulinarischen Abenteuersprung in den Orient vor - aber lass niemanden zu nahe kommen, nachdem du davon probiert hast...
     </p>
+  </div>
+
+  <div class="overlay" id="allergenOverlay">
+    <div class="popup-box">
+      <h3>Allergene</h3>
+      <ul>
+        <li><strong>Chili (Stufe: Inferno)</strong> - Kann spontane Feuerspeieneffekte verursachen. Feuerlöscher bereithalten!</li>
+        <li><strong>Ingwer</strong> - Wirkt wie ein Jetpack für deinen Kreislauf. Zündet von innen!</li>
+        <li><strong>Kokosmilch</strong> - Enthält Kokos. Überraschung! Kann Spuren von Palmenurlaub enthalten.</li>
+        <li><strong>Knoblauch</strong> - Nicht allergen, aber garantiert vampirresistent.</li>
+        <li><strong>Mut</strong> - Erforderlich in großen Mengen. Nicht für Zartbesaitete empfohlen.</li>
+        <li><strong>Drachenenergie (vermutlich Spuren enthalten)</strong> - Nicht offiziell bestätigt, aber... du wirst es merken.</li>
+      </ul>
+      <button class="close-btn" id="closePopup">Schließen ✕</button>
+    </div>
   </div>
 
   <!-- ============================================================
@@ -89,8 +107,8 @@
        FOOTER
   -->
   <footer>
-    <p>&copy; 2026 ZutatenZirkus - Míriam Domínguez Martínez | DBE Academy </p>
+    <p>&copy; 2026 ZutatenZirkus - Míriam Domínguez Martínez | DBE Academy</p>
   </footer>
 </body>
-</html>
 
+</html>
