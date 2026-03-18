@@ -1,5 +1,6 @@
-/* script.js — ZutatenZirkus – Drachenatem | Recipe Website
-   Míriam Domínguez Martínez - 10.03.2026
+/* 
+  script.js - ZutatenZirkus - Drachenatem | Recipe Website
+   Míriam Domínguez Martínez - 18.03.2026
 */
 
 /* 
@@ -96,4 +97,29 @@ document.getElementById("portionen").addEventListener("input", function () {
     updateIngredients(); // only calculate if input is valid
   }
 
+});
+
+/* 
+  STEP 6: ALLERGEN POPUP
+*/
+
+const overlay    = document.getElementById("allergenOverlay");
+const openPopup  = document.getElementById("openPopup");
+const closePopup = document.getElementById("closePopup");
+
+// Info-Button klicken → Overlay einblenden
+openPopup.addEventListener("click", function () {
+  overlay.classList.toggle("active");
+});
+
+// Schließen-Button klicken → Overlay ausblenden
+closePopup.addEventListener("click", function () {
+  overlay.classList.toggle("active");
+});
+
+// Klick außerhalb der Box → Overlay ausblenden
+overlay.addEventListener("click", function (e) {
+  if (e.target === overlay) {
+    overlay.classList.toggle("active");
+  }
 });
