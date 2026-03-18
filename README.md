@@ -1,8 +1,8 @@
-## ZutatenZirkus – Hausaufgabe
+## ZutatenZirkus - Hausaufgabe
 **Autorin:** Míriam Domínguez Martínez  
 **Datum:** 10.03.2026  
-**Kurs:** Full Stack Web Development – DBE Academy  
-**Thema:** HTML, CSS & JavaScript – Recipe Website ZutatenZirkus
+**Kurs:** Full Stack Web Development - DBE Academy  
+**Thema:** HTML, CSS & JavaScript - Recipe Website ZutatenZirkus
 
 ---
 
