@@ -1,5 +1,6 @@
-/* style.css — ZutatenZirkus – Drachenatem | Recipe Website
-   Míriam Domínguez Martínez - 10.03.2026
+/* 
+   style.css - ZutatenZirkus - Drachenatem | Recipe Website
+   Míriam Domínguez Martínez - 18.03.2026
 */
 
 /* ================================================================
@@ -75,6 +76,9 @@ header h1 {
 .recipe-hero h2 {
   font-size: 22px;
   margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 /* Semi-transparent inner box for the description text */
@@ -187,8 +191,109 @@ section ol li {
   border-radius: 6px; /* Rounded corners */
 }
 
+/* ================================================================
+   8. INFO BUTTON
+*/
+.recipe-hero h2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.info-btn {
+  background: rgba(255, 255, 255, 0.25);
+  border: 2px solid rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  flex-shrink: 0;
+}
+
+.info-btn:hover {
+  background: rgba(255, 255, 255, 0.45);
+}
+
+/* ================================================================
+   9. ALLERGEN OVERLAY & POPUP
+*/
+
+/* Full-screen dark overlay — hidden by default */
+.overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 100; /* sits above everything */
+  justify-content: center;
+  align-items: center;
+}
+
+/* When .active is toggled on, show the overlay as flex */
+.overlay.active {
+  display: flex;
+}
+
+/* The white popup box centered inside the overlay */
+.popup-box {
+  background: var(--white);
+  border-radius: 10px;
+  padding: 28px 32px;
+  max-width: 360px;
+  width: 90%;
+  position: relative;
+  z-index: 101; /* sits above the overlay */
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+}
+
+.popup-box h3 {
+  font-size: 17px;
+  color: var(--dark-green);
+  margin-bottom: 16px;
+}
+
+.popup-box ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.popup-box ul li {
+  padding: 7px 0;
+  font-size: 14px;
+  border-bottom: 1px solid var(--border);
+}
+
+.popup-box ul li:last-child {
+  border-bottom: none;
+}
+
+.close-btn {
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  padding: 9px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s;
+}
+
+.close-btn:hover {
+  background: var(--dark-green);
+}
+
 /* ============================================
-   8. FOOTER
+   10. FOOTER
 */
 
 /* Footer styles */
@@ -204,3 +309,5 @@ footer p {
     color: var(--text); /* Darker text color for better contrast */
     margin: 0; /* Removes default margin from the footer paragraph for better spacing */
 }
+
+
