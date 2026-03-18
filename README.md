@@ -1,6 +1,6 @@
-## ZutatenZirkus - Hausaufgabe
+## ZutatenZirkus – Hausaufgabe
 **Autorin:** Míriam Domínguez Martínez  
-**Datum:** 10.03.2026  
+**Datum:** 18.03.2026  
 **Kurs:** Full Stack Web Development - DBE Academy  
 **Thema:** HTML, CSS & JavaScript - Recipe Website ZutatenZirkus
 
@@ -29,8 +29,6 @@ Dieses Projekt ist eine interaktive Rezept-Website, ZutatenZirkus, erstellt mit 
 ### Farbpalette
 
 ![colors](./img/colors.png)
-
-*Entschuldigung dafür, dass ich die Farben der Vorlage nicht eingehalten habe, ich habe einfach mein eigenes Variablen-Template aus meinem Portfolio verwendet, um das CSS schneller erstellen zu können.*
 
 ---
 
